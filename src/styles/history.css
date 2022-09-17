@@ -1,0 +1,26 @@
+.history-log{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem .5rem;
+    align-items: center;
+}
+
+.centered{
+    justify-content: center;
+}
+
+.user.hidden{
+    display: none;
+}
+
+.single-log{
+    color: rgb(0, 0, 255);
+    text-decoration: underline;
+    cursor: pointer;
+    padding-bottom: .5rem;
+}
+
+.single-log:hover{
+    color: rgb(3, 3, 122);
+}

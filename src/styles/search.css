@@ -1,0 +1,83 @@
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: .5rem;
+}
+
+.form-btn,.form-input{
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: .5px solid #000;
+}
+
+.form-btn{
+    border: unset;
+    background-color: rgb(30, 144, 255);
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    background-color: rgb(86, 170, 253);
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+.user-avatar{
+    width: 10rem;
+    height: 10rem;
+    border-radius: .3rem;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+@media (min-width:767px){
+    .user{
+        flex-direction: row;
+        margin: 0 2rem;
+    }
+}
+
+.repo{
+    margin: 2rem 0.5rem;
+}
+
+.title{
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.repo-repositories{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.repo-single__repo li{
+    font-weight: 800;
+}
+
+.repo-single__repo p{
+    opacity: 0.9;
+    padding-bottom: 1rem;
+}
+
+@media (min-width:767px){
+    .repo{
+        margin: 2rem 4rem;
+    }
+}

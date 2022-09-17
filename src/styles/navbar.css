@@ -1,0 +1,29 @@
+.navbar{
+    background-color: #000;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.link-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link{
+    color: #fff;
+    padding: .5rem;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    background-color: rgb(56, 55, 55);
+}
+
+.nav-link::marker{
+    display: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: unset;
+}
