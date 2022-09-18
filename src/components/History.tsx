@@ -21,6 +21,7 @@ type User = {
 const History = () => {
     const { userInfo , history ,singleSearch , setSingleSearch } = useContext<any>(AppContext)
 
+    console.log(singleSearch)
 
     return (
         <>
@@ -29,7 +30,7 @@ const History = () => {
                 {history.map((element:User,index:number)=>{
                     return <div key={index}>
                                 <p onClick={()=>{setSingleSearch({
-                                    avatar_url:element.userData?.avatar_url,
+                                    avatar_url:element.userData?.avatar_url?element.userData?.avatar_url:'',
                                     name:element.userData?.name,
                                     email:element.userData?.email,
                                     bio:element.userData?.bio,
@@ -38,7 +39,7 @@ const History = () => {
                             </div>
                 })}
             </div>
-            {singleSearch.avatar && <div className={`user ${singleSearch.avatar_url.length === 0?'hidden':'centered'}`}>
+            {singleSearch.avatar !== '' && <div className={`user ${singleSearch.avatar_url.length === 0?'hidden':'centered'}`}>
                 <img className='user-avatar' src={singleSearch.avatar_url} alt={singleSearch.name} />
                 <div className='user-info'>
                     <p>name: {singleSearch.name}</p>
